@@ -219,4 +219,4 @@ git push origin feature/your-feature-name
 ## Course Information
 - Course: [Parallel Programming]
 - Professor: [Ahmed Maher]
-- Team Members: [Omar Ashraf, Mohammed Adel, Esraa Adel, Nada Salah, Amira Mohammed]
+- Team Members: [Omar Ashraf, Mohammed Adel, Esraa Adel, Nada Salah, Amira Fawzy]
