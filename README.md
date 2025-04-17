@@ -1,222 +1,190 @@
-# ETL Pipeline with Spring Batch
+# ETL Pipeline Project
 
-## Project Overview
-This project implements an ETL (Extract, Transform, Load) pipeline using Spring Batch. The pipeline is designed to read data from CSV files, perform transformations, and load the processed data into a SQLite database. It demonstrates the fundamentals of ETL processes while leveraging the Spring Batch framework.
+This project implements an ETL (Extract, Transform, Load) pipeline using Spring Batch to process sales data from a CSV file into a SQLite database.
 
-## Educational Objectives
-- Learn ETL (Extract, Transform, Load) concepts and implementation
-- Understand Spring Batch framework architecture
-- Apply multi-threaded processing techniques
-- Practice data transformation and validation
-- Implement error handling in batch processing
+## Project Structure
 
-## Technology Stack
-- Java 21
-- Spring Boot 3.4.3
-- Spring Batch
-- Maven
-- SQLite 3
-- Spring JDBC
+```
+src/
+├── main/
+│   ├── java/
+│   │   └── com/etl/
+│   │       ├── config/        # Spring Batch configuration
+│   │       ├── model/         # Data models
+│   │       ├── processor/     # Data transformation logic
+│   │       ├── reader/        # Data extraction
+│   │       └── writer/        # Data loading
+│   └── resources/
+│       └── sales_data.csv    # Input data file
+└── test/
+    └── java/
+        └── com/etl/
+            └── EtlPipelineTest.java  # Integration tests
+```
 
-## Prerequisites
-- JDK 21
-- Maven
-- SQLite 3
-- IDE (e.g., Visual Studio Code with Java extensions)
+## Features
 
-## Setting Up the Development Environment
+- CSV file reading with header row skipping
+- Data transformation and validation
+- SQLite database integration
+- Comprehensive test coverage
+- Data export capabilities
 
-### 1. Installing Java 21
-1. Download JDK 21 from [Oracle's website](https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html) or use OpenJDK
-2. Run the installer and follow the instructions
-3. Set the JAVA_HOME environment variable:
-   - **Windows**: 
-     ```
-     setx JAVA_HOME "C:\Program Files\Java\jdk-21"
-     setx PATH "%PATH%;%JAVA_HOME%\bin"
-     ```
-4. Verify installation:
-   ```
-   java -version
-   ```
+## Running the Application
 
-### 2. Installing Maven
-1. Download Maven from [Apache Maven website](https://maven.apache.org/download.cgi)
-2. Extract the archive to a directory of your choice
-3. Set the environment variables:
-   - **Windows**:
-     ```
-     setx M2_HOME "C:\path\to\maven"
-     setx PATH "%PATH%;%M2_HOME%\bin"
-     ```
-4. Verify installation:
-   ```
-   mvn -version
-   ```
-
-### 3. Installing SQLite
-1. Download SQLite from [SQLite website](https://www.sqlite.org/download.html)
-2. For Windows, download the precompiled binaries
-3. Extract the files to a folder (e.g., C:\sqlite)
-4. Add the directory to your PATH:
-   ```
-   setx PATH "%PATH%;C:\sqlite"
-   ```
-5. Verify installation:
-   ```
-   sqlite3 --version
-   ```
-
-### 4. Setting Up Visual Studio Code
-1. Download and install VS Code from [Visual Studio Code website](https://code.visualstudio.com/)
-2. Install the following extensions:
-   - Extension Pack for Java
-   - Spring Boot Extension Pack
-   - SQLite
-   - Maven for Java
-
-### 5. Creating a Project with Spring Initializer
-1. Go to [Spring Initializer](https://start.spring.io/)
-2. Configure the project:
-   - Project: Maven
-   - Language: Java
-   - Spring Boot: 3.4.3
-   - Group: com.etl
-   - Artifact: etl-pipeline
-   - Name: etl-pipeline
-   - Description: ETL Pipeline with Spring Batch
-   - Package name: com.etl
-   - Packaging: Jar
-   - Java: 21
-3. Add the following dependencies:
-   - Spring Batch
-   - Spring Web
-   - JDBC API
-   - Spring Boot DevTools (optional)
-4. Generate the project and download the ZIP file
-5. Extract the ZIP file to your desired location
-
-## Getting Started with Git
-
-### Cloning the Repository
+1. Build the project:
 ```bash
-git clone https://github.com/www-e/ETL.git
-cd etl-pipeline
+mvn clean package
 ```
 
-### Creating and Switching to a New Branch
+2. Run the tests:
 ```bash
-# Create a new branch
-git branch feature/your-feature-name
-
-# Switch to your new branch
-git checkout feature/your-feature-name
-
-# Or create and switch in one command
-git checkout -b feature/your-feature-name
+mvn clean test
 ```
 
-### Adding SQLite Dependency
-After setting up the project, add the SQLite dependency to your `pom.xml`:
-
-```xml
-<dependency>
-    <groupId>org.xerial</groupId>
-    <artifactId>sqlite-jdbc</artifactId>
-    <version>3.45.1.0</version>
-    <scope>runtime</scope>
-</dependency>
-```
-
-### Configuring SQLite in application.properties
-Configure your `application.properties` file with the following settings:
-
-```properties
-# SQLite Configuration
-spring.datasource.url=jdbc:sqlite:etl_database.db
-spring.datasource.driver-class-name=org.sqlite.JDBC
-spring.datasource.username=
-spring.datasource.password=
-spring.jpa.database-platform=org.hibernate.dialect.SQLiteDialect
-
-# Hibernate Configuration (Optional)
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.format_sql=true
-
-# Spring Batch Configuration
-spring.batch.job.enabled=false
-spring.batch.initialize-schema=always
-```
-
-## Building and Running the Project
-
-### Building the Project
-```bash
-mvn clean install
-```
-
-### Running the Application
+3. Run the application:
 ```bash
 mvn spring-boot:run
 ```
 
-## Project Structure
-```
-etl-pipeline/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── etl/
-│   │   │           ├── config/       # Configuration classes
-│   │   │           ├── model/        # Data models
-│   │   │           ├── processor/    # Data processors
-│   │   │           ├── reader/       # Data readers
-│   │   │           ├── writer/       # Data writers
-│   │   │           └── EtlPipelineApplication.java
-│   │   └── resources/
-│   │       ├── application.properties
-│   │       └── data/
-│   │           └── sales_data.csv    # Sample data
-│   └── test/       # Test classes
-├── pom.xml
-└── README.md
-```
+## Data Viewing
 
-## Dataset
-This project uses a simple sales dataset in CSV format with fields like product ID, product name, quantity, price, and transaction date. This dataset will be processed and stored in a structured format in the SQLite database.
+After running the ETL process, you can view the data in several ways:
 
-## Development Process
-See the [DEVELOPMENT.md](DEVELOPMENT.md) file for detailed information on the development process and educational aspects of this project.
-
-
-## Git Workflow
-
-### Committing Changes
+1. Through the test output (shows formatted table)
+2. Using SQLite command line:
 ```bash
-# Add your changes
-git add .
-
-# Commit with a meaningful message
-git commit -m "Description of changes made"
+sqlite3 target/test-classes/test.db
+SELECT * FROM sales_records;
 ```
 
-### Pushing to Remote
+3. Export to CSV:
 ```bash
-# Push to your branch
-git push origin feature/your-feature-name
+sqlite3 target/test-classes/test.db
+.headers on
+.mode csv
+.output sales_export.csv
+SELECT * FROM sales_records;
 ```
 
-### Creating a Pull Request
-1. Navigate to the repository on GitHub
-2. Click on "Pull Requests" tab
-3. Click on "New Pull Request"
-4. Select your branch as the compare branch
-5. Click "Create Pull Request"
-6. Add a description and submit
+## SQL Documentation
 
-## Course Information
-- Course: [Parallel Programming]
-- Professor: [Ahmed Maher]
-- Team Members: [Omar Ashraf, Mohammed Adel, Esraa Adel, Nada Salah, Amira Fawzy]
+For detailed SQL commands and examples, see [SQL Commands Documentation](docs/sql_commands.md).
+
+## Dependencies
+
+- Spring Boot 3.4.4
+- Spring Batch
+- SQLite JDBC
+- JUnit 5
+
+## Configuration
+
+The application uses the following configuration files:
+- `application.properties`: Main application configuration
+- `application-test.properties`: Test-specific configuration
+
+## Testing
+
+The project includes integration tests that:
+1. Create the database schema
+2. Run the ETL job
+3. Verify the loaded data
+4. Clean up after testing
+
+## Data Model
+
+The `SalesRecord` class represents the sales data with the following fields:
+- productId
+- productName
+- price
+- quantity
+- saleDate
+- customerId
+- storeId
+- totalAmount
+
+## Prerequisites
+
+- Java 21
+- Maven 3.8+
+- VS Code with Java extensions
+
+## Running the Project
+
+### Using Maven
+
+1. Open a terminal in the project root directory
+2. Run the application:
+   ```bash
+   mvn spring-boot:run
+   ```
+
+### Using VS Code
+
+1. Open the project in VS Code
+2. Install the following extensions if not already installed:
+   - Extension Pack for Java
+   - Spring Boot Extension Pack
+3. Open the Command Palette (Ctrl+Shift+P)
+4. Type "Spring Boot: Run" and select the project
+
+## Testing
+
+Run the tests using:
+```bash
+mvn test
+```
+
+## Data Schema
+
+The project uses SQLite with the following schema:
+
+```sql
+CREATE TABLE sales_records (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    product_id TEXT NOT NULL,
+    product_name TEXT NOT NULL,
+    price REAL NOT NULL,
+    quantity INTEGER NOT NULL,
+    sale_date TIMESTAMP NOT NULL,
+    customer_id TEXT NOT NULL,
+    store_id TEXT NOT NULL,
+    total_amount REAL NOT NULL
+);
+```
+
+## Adding New Data
+
+1. Create a new CSV file in `src/main/resources/` with the following format:
+   ```
+   productId,productName,price,quantity,saleDate,customerId,storeId
+   P001,Product Name,99.99,1,2024-01-15T10:30:00,C001,S001
+   ```
+
+2. Update the `SalesRecordReader` to point to your new file
+
+## Scaling the Project
+
+To scale the project:
+
+1. Add new tables in `schema.sql`
+2. Create corresponding model classes
+3. Implement new readers, processors, and writers
+4. Add new job configurations in `EtlJobConfig`
+
+## Troubleshooting
+
+Common issues and solutions:
+
+1. Database connection issues:
+   - Check if `etl_database.db` exists
+   - Verify SQLite JDBC driver is in classpath
+
+2. CSV file not found:
+   - Ensure file is in `src/main/resources/`
+   - Check file permissions
+
+3. Spring Batch errors:
+   - Check application.properties configuration
+   - Verify job parameters

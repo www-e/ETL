@@ -145,3 +145,102 @@ Upon completion of this project, students will have:
 
 ## Conclusion
 This project provides a practical introduction to ETL processes using Spring Batch. By working with realistic sales data and implementing a complete extract-transform-load pipeline, students will gain valuable experience in data processing that can be applied to more complex scenarios in the future.
+
+## Project Architecture
+
+The ETL pipeline consists of three main components:
+
+1. **Extract**: Reads data from CSV files
+2. **Transform**: Processes and validates the data
+3. **Load**: Writes the processed data to SQLite database
+
+## Data Flow
+
+1. CSV File → SalesRecordReader
+2. SalesRecordReader → SalesRecordProcessor
+3. SalesRecordProcessor → SalesRecordWriter
+4. SalesRecordWriter → SQLite Database
+
+## Component Details
+
+### 1. SalesRecordReader
+- Reads data from CSV file
+- Maps CSV columns to SalesRecord object
+- Handles file reading errors
+
+### 2. SalesRecordProcessor
+- Calculates total amount (price * quantity)
+- Validates data
+- Can be extended for additional transformations
+
+### 3. SalesRecordWriter
+- Writes processed records to SQLite
+- Uses batch processing for efficiency
+- Handles database errors
+
+## Testing Strategy
+
+### Unit Tests
+- Test each component independently
+- Mock dependencies where necessary
+- Verify data transformations
+
+### Integration Tests
+- Test the complete ETL flow
+- Verify database operations
+- Check error handling
+
+## Database Schema Evolution
+
+To add new tables or modify existing ones:
+
+1. Update `schema.sql`
+2. Create corresponding model classes
+3. Update readers/writers as needed
+4. Run database migrations
+
+## Performance Considerations
+
+1. Batch Size: Configured in `EtlJobConfig` (currently 10)
+2. Database Indexes: Add as needed for query performance
+3. Memory Usage: Monitor during large data processing
+
+## Error Handling
+
+The pipeline includes error handling for:
+- File reading errors
+- Data validation errors
+- Database operation errors
+- Batch processing errors
+
+## Monitoring
+
+Enable debug logging in `application.properties`:
+```properties
+logging.level.org.springframework.batch=DEBUG
+logging.level.com.etl=DEBUG
+```
+
+## Scaling the Solution
+
+### Horizontal Scaling
+- Implement parallel processing
+- Use multiple worker threads
+- Distribute processing across nodes
+
+### Vertical Scaling
+- Optimize database queries
+- Add appropriate indexes
+- Increase batch size
+
+## Best Practices
+
+1. Always validate input data
+2. Use transactions for data integrity
+3. Implement proper error handling
+4. Monitor performance metrics
+5. Keep configurations externalized
+6. Write comprehensive tests
+7. Document all changes
+8.kill the server 
+netstat -ano | findstr :8081
