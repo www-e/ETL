@@ -3,6 +3,7 @@ package com.etl.reader;
 import java.io.File;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemStream;
@@ -22,6 +23,7 @@ import com.etl.model.SalesRecord;
 public class SalesRecordReader implements ItemReader<SalesRecord>, ItemStream {
     private final FlatFileItemReader<SalesRecord> delegate;
     private String currentFilePath;
+    private final AtomicBoolean initialized = new AtomicBoolean(false);
 
     public SalesRecordReader(String initialFilePath) {
         this.currentFilePath = initialFilePath;
@@ -51,30 +53,35 @@ public class SalesRecordReader implements ItemReader<SalesRecord>, ItemStream {
                 .build();
     }
 
-    public void setFilePath(String filePath) {
-        if (!filePath.equals(currentFilePath)) {
-            this.currentFilePath = filePath;
-            this.delegate.setResource(new FileSystemResource(new File(filePath)));
-        }
+    public synchronized void setFilePath(String filePath) {
+        this.currentFilePath = filePath;
+        this.delegate.setResource(new FileSystemResource(new File(filePath)));
+        this.initialized.set(false);
     }
 
     @Override
-    public SalesRecord read() throws Exception, UnexpectedInputException, ParseException, NonTransientResourceException {
+    public synchronized SalesRecord read() throws Exception, UnexpectedInputException, ParseException, NonTransientResourceException {
+        if (!initialized.get()) {
+            this.delegate.open(null);
+            this.initialized.set(true);
+        }
         return delegate.read();
     }
 
     @Override
-    public void open(@NonNull org.springframework.batch.item.ExecutionContext executionContext) {
+    public synchronized void open(@NonNull org.springframework.batch.item.ExecutionContext executionContext) {
         delegate.open(executionContext);
+        initialized.set(true);
     }
 
     @Override
-    public void update(@NonNull org.springframework.batch.item.ExecutionContext executionContext) {
+    public synchronized void update(@NonNull org.springframework.batch.item.ExecutionContext executionContext) {
         delegate.update(executionContext);
     }
 
     @Override
-    public void close() {
+    public synchronized void close() {
         delegate.close();
+        initialized.set(false);
     }
 } 
