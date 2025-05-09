@@ -1,0 +1,210 @@
+/* Job History Styles */
+
+.history-tab {
+    padding: var(--spacing-md);
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.history-header h3 {
+    margin: 0;
+    color: var(--text-dark);
+    font-weight: var(--font-semibold);
+}
+
+.history-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+/* History Cards */
+.history-card {
+    background-color: var(--bg-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--spacing-md);
+    overflow: hidden;
+    transition: all var(--transition-normal) ease;
+    border-left: 4px solid var(--border-light);
+}
+
+.history-card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.history-card.expanded {
+    box-shadow: var(--shadow-md);
+}
+
+/* Card with different status colors */
+.history-card[data-status="completed"] {
+    border-left-color: var(--success-color);
+}
+
+.history-card[data-status="failed"] {
+    border-left-color: var(--danger-color);
+}
+
+.history-card[data-status="running"] {
+    border-left-color: var(--primary-color);
+}
+
+.history-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+    cursor: pointer;
+    background-color: var(--bg-white);
+    transition: background-color var(--transition-normal) ease;
+}
+
+.history-card-header:hover {
+    background-color: var(--bg-hover);
+}
+
+.history-card-title {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-weight: var(--font-medium);
+    color: var(--text-dark);
+}
+
+.history-card-title i {
+    color: var(--text-medium);
+}
+
+.history-card-toggle {
+    color: var(--text-medium);
+    transition: transform var(--transition-normal) ease;
+}
+
+.history-card.expanded .history-card-toggle {
+    transform: rotate(180deg);
+}
+
+.history-card-body {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all var(--transition-normal) ease;
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-light);
+}
+
+.history-card.expanded .history-card-body {
+    padding: var(--spacing-md);
+    max-height: 500px;
+}
+
+.history-card-details {
+    margin-bottom: var(--spacing-md);
+}
+
+.detail-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.detail-row:last-child {
+    margin-bottom: 0;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px;
+}
+
+.detail-label {
+    font-size: var(--text-sm);
+    color: var(--text-medium);
+    margin-bottom: var(--spacing-xs);
+}
+
+.detail-value {
+    font-weight: var(--font-medium);
+    color: var(--text-dark);
+}
+
+.history-card-actions {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid var(--border-light);
+    padding-top: var(--spacing-md);
+}
+
+/* Empty state */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xl) 0;
+    color: var(--text-medium);
+    text-align: center;
+}
+
+.empty-state i {
+    margin-bottom: var(--spacing-md);
+    opacity: 0.5;
+}
+
+/* Badges */
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.6em;
+    font-size: 75%;
+    font-weight: var(--font-medium);
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 10rem;
+}
+
+.badge-primary {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+.badge-success {
+    background-color: var(--success-color);
+    color: var(--text-white);
+}
+
+.badge-danger {
+    background-color: var(--danger-color);
+    color: var(--text-white);
+}
+
+.badge-warning {
+    background-color: var(--warning-color);
+    color: var(--text-dark);
+}
+
+.badge-secondary {
+    background-color: var(--text-medium);
+    color: var(--text-white);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .detail-row {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .detail-item {
+        min-width: 100%;
+    }
+}

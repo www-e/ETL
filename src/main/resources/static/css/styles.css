@@ -76,6 +76,16 @@ body {
     background-color: rgba(var(--secondary-color-rgb), 0.1);
     color: var(--secondary-color);
 }
+.upload-actions {
+    display: flex; 
+    gap: 950px;
+}
+#processBtn {
+    order: -1;
+}
+#previewBtn {
+    order: 0;
+}
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {

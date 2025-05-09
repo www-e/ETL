@@ -164,6 +164,26 @@ public class EtlService {
         status.put("startTime", jobExecution.getStartTime());
         status.put("endTime", jobExecution.getEndTime());
         
+        // Add job parameters including file information
+        JobParameters jobParameters = jobExecution.getJobParameters();
+        if (jobParameters != null) {
+            status.put("jobParameters", jobParameters.getParameters());
+            
+            // Extract file information for convenience
+            String filePath = jobParameters.getString("filePath");
+            if (filePath != null) {
+                // Extract just the filename from the path
+                String fileName = filePath.contains("\\") ? 
+                    filePath.substring(filePath.lastIndexOf("\\") + 1) : filePath;
+                status.put("fileName", fileName);
+            }
+            
+            String fileType = jobParameters.getString("fileType");
+            if (fileType != null) {
+                status.put("fileType", fileType);
+            }
+        }
+        
         // Add step execution details
         List<Map<String, Object>> stepDetails = new ArrayList<>();
         for (StepExecution stepExecution : jobExecution.getStepExecutions()) {

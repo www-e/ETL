@@ -13,6 +13,8 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/step-details.css">
+    <link rel="stylesheet" href="/css/job-history.css">
+    <link rel="stylesheet" href="/css/metrics-explanation.css">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Chart.js for Data Visualization -->
@@ -29,6 +31,7 @@
                 <ul>
                     <li class="active" data-tab="input-tab"><i class="fas fa-file-upload"></i> Input & Preview</li>
                     <li data-tab="result-tab"><i class="fas fa-chart-bar"></i> ETL Results</li>
+                    <li data-tab="history-tab"><i class="fas fa-history"></i> History</li>
                 </ul>
             </nav>
         </header>
@@ -82,6 +85,7 @@
 
             <!-- ETL Results Tab -->
             <section id="result-tab" class="tab-content">
+
                 <div class="results-header">
                     <h2><i class="fas fa-chart-line"></i> ETL Processing Results</h2>
                     <div class="filter-container">
@@ -154,6 +158,25 @@
                     </div>
                 </div>
             </section>
+
+            <!-- History Tab -->
+            <section id="history-tab" class="tab-content">
+                <div class="history-header">
+                    <h2><i class="fas fa-history"></i> ETL Job History</h2>
+                    <div class="history-actions">
+                        <button id="clearHistoryBtn" class="btn btn-danger"><i class="fas fa-trash"></i> Clear History</button>
+                    </div>
+                </div>
+                <div class="history-container" id="jobHistoryContainer">
+                    <div id="historyLoader" class="loader hidden">
+                        <div class="spinner"></div>
+                        <p>Loading job history...</p>
+                    </div>
+                    <div id="historyContent" class="history-content">
+                        <p class="no-data-message">No job history available</p>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="footer">
@@ -191,9 +214,18 @@
                         <span class="status-value" id="endTime"></span>
                     </div>
                     <div class="status-item">
+                        <span class="status-label"><i class="fas fa-hourglass"></i> Duration:</span>
+                        <span class="status-value" id="jobDuration"></span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label"><i class="fas fa-microchip"></i> Threads:</span>
+                        <span class="status-value" id="threadsUsed"></span>
+                    </div>
+                    <div class="status-item">
                         <span class="status-label"><i class="fas fa-tasks"></i> Step Details:</span>
                     </div>
                     <div id="stepDetails" class="step-details"></div>
+                    <div id="metricsExplanation" class="metrics-explanation"></div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -211,6 +243,7 @@
     <script src="/js/components/data-preview.js"></script>
     <script src="/js/components/data-chart.js"></script>
     <script src="/js/components/job-status.js"></script>
+    <script src="/js/components/job-history.js"></script>
     <script src="/js/components/results-table.js"></script>
     <script src="/js/app.js"></script>
 </body>
