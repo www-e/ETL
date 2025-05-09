@@ -47,28 +47,30 @@ public class BatchConfig {
     @Value("${etl.chunk-size:10}")
     private int chunkSize;
 
-    @Value("${etl.max-threads:8}")
+    @Value("${etl.max-threads:4}")
     private int maxThreads;
     
-    @Value("${etl.throttle-limit:8}")
+    @Value("${etl.throttle-limit:4}")
     private int throttleLimit;
     
-    @Value("${etl.queue-capacity:32}")
+    @Value("${etl.queue-capacity:16}")
     private int queueCapacity;
 
     @Bean
     public TaskExecutor taskExecutor() {
-        // Use a more advanced task executor for better performance
+        // Configure task executor with reduced concurrency to prevent database locking
         org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor taskExecutor = 
             new org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor();
         
+        // Reduce thread count to minimize database contention
         taskExecutor.setCorePoolSize(maxThreads);
-        taskExecutor.setMaxPoolSize(maxThreads * 2);
+        taskExecutor.setMaxPoolSize(maxThreads);
         taskExecutor.setQueueCapacity(queueCapacity);
         taskExecutor.setThreadNamePrefix("etl-thread-");
         taskExecutor.setAllowCoreThreadTimeOut(true);
-        taskExecutor.setKeepAliveSeconds(60); // Idle threads timeout
+        taskExecutor.setKeepAliveSeconds(120); // Longer idle threads timeout
         taskExecutor.setWaitForTasksToCompleteOnShutdown(true);
+        taskExecutor.setAwaitTerminationSeconds(60);
         taskExecutor.initialize();
         
         return taskExecutor;

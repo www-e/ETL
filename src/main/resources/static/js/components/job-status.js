@@ -177,21 +177,46 @@ class JobStatusManager {
      */
     renderStepDetails(steps) {
         if (!steps || steps.length === 0) {
-            this.stepDetailsElement.innerHTML = '<p>No step details available</p>';
+            this.stepDetailsElement.innerHTML = '<p class="no-data-message">No step details available</p>';
             return;
         }
         
+        console.log('Step details received:', steps); // Debug log to check data
+        
         let stepsHtml = '';
         steps.forEach(step => {
+            // Add status class for coloring
+            let statusClass = 'status-info';
+            if (step.status === 'COMPLETED') statusClass = 'status-success';
+            if (step.status === 'FAILED') statusClass = 'status-error';
+            
             stepsHtml += `
                 <div class="step-item">
-                    <h4>${step.stepName}</h4>
+                    <div class="step-header">
+                        <h4>${step.stepName}</h4>
+                        <span class="step-status ${statusClass}">${step.status}</span>
+                    </div>
                     <div class="step-stats">
-                        <span class="step-stat">Status: <strong>${step.status}</strong></span>
-                        <span class="step-stat">Read: <strong>${step.readCount}</strong></span>
-                        <span class="step-stat">Write: <strong>${step.writeCount}</strong></span>
-                        <span class="step-stat">Filter: <strong>${step.filterCount}</strong></span>
-                        <span class="step-stat">Skip: <strong>${step.skipCount}</strong></span>
+                        <div class="step-stat">
+                            <span class="stat-label">Read:</span>
+                            <span class="stat-value">${step.readCount}</span>
+                        </div>
+                        <div class="step-stat">
+                            <span class="stat-label">Write:</span>
+                            <span class="stat-value">${step.writeCount}</span>
+                        </div>
+                        <div class="step-stat">
+                            <span class="stat-label">Filter:</span>
+                            <span class="stat-value">${step.filterCount}</span>
+                        </div>
+                        <div class="step-stat">
+                            <span class="stat-label">Skip:</span>
+                            <span class="stat-value">${step.skipCount}</span>
+                        </div>
+                        <div class="step-stat">
+                            <span class="stat-label">Commit:</span>
+                            <span class="stat-value">${step.commitCount || 0}</span>
+                        </div>
                     </div>
                 </div>
             `;
