@@ -1,0 +1,528 @@
+2025-05-08 18:31:55.765624-07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:31:55.988967-07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:31:56.393253-07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:31:56.997564-07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:31:57.805050-07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:31:58.810372-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:31:59.014543-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:31:59.419624-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:00.023350-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:00.827992-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:01.831452-07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:02.035323-07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:02.445521-07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:03.073835-07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:03.883473-07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:04.903952-07:00 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:05.107172-07:00 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:05.511017-07:00 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:06.128491-07:00 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:06.930238-07:00 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:29.905538-07:00 jdbc[20]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:30.138079-07:00 jdbc[20]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:30.557646-07:00 jdbc[20]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:31.161357-07:00 jdbc[20]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:31.975872-07:00 jdbc[20]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:32.980800-07:00 jdbc[21]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:33.195056-07:00 jdbc[21]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:33.599906-07:00 jdbc[21]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:34.205384-07:00 jdbc[21]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:35.012184-07:00 jdbc[21]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:36.018496-07:00 jdbc[22]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:36.221514-07:00 jdbc[22]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:36.626153-07:00 jdbc[22]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:37.228620-07:00 jdbc[22]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:38.035733-07:00 jdbc[22]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:39.038455-07:00 jdbc[19]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:39.241233-07:00 jdbc[19]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:39.643998-07:00 jdbc[19]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:40.248999-07:00 jdbc[19]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:32:41.053142-07:00 jdbc[19]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:43:46.525793-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BATCH_JOB_INSTANCE" already exists; SQL statement:
+CREATE TABLE BATCH_JOB_INSTANCE ( JOB_INSTANCE_ID BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY , VERSION BIGINT , JOB_NAME VARCHAR(100) NOT NULL, JOB_KEY VARCHAR(32) NOT NULL, constraint JOB_INST_UN unique (JOB_NAME, JOB_KEY) ) [42101-232]
+2025-05-08 18:43:46.528282-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BATCH_JOB_EXECUTION" already exists; SQL statement:
+CREATE TABLE BATCH_JOB_EXECUTION ( JOB_EXECUTION_ID BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY , VERSION BIGINT , JOB_INSTANCE_ID BIGINT NOT NULL, CREATE_TIME TIMESTAMP(9) NOT NULL, START_TIME TIMESTAMP(9) DEFAULT NULL , END_TIME TIMESTAMP(9) DEFAULT NULL , STATUS VARCHAR(10) , EXIT_CODE VARCHAR(2500) , EXIT_MESSAGE VARCHAR(2500) , LAST_UPDATED TIMESTAMP(9), constraint JOB_INST_EXEC_FK foreign key (JOB_INSTANCE_ID) references BATCH_JOB_INSTANCE(JOB_INSTANCE_ID) ) [42101-232]
+2025-05-08 18:43:46.528282-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BATCH_JOB_EXECUTION_PARAMS" already exists; SQL statement:
+CREATE TABLE BATCH_JOB_EXECUTION_PARAMS ( JOB_EXECUTION_ID BIGINT NOT NULL , PARAMETER_NAME VARCHAR(100) NOT NULL , PARAMETER_TYPE VARCHAR(100) NOT NULL , PARAMETER_VALUE VARCHAR(2500) , IDENTIFYING CHAR(1) NOT NULL , constraint JOB_EXEC_PARAMS_FK foreign key (JOB_EXECUTION_ID) references BATCH_JOB_EXECUTION(JOB_EXECUTION_ID) ) [42101-232]
+2025-05-08 18:43:46.530124-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BATCH_STEP_EXECUTION" already exists; SQL statement:
+CREATE TABLE BATCH_STEP_EXECUTION ( STEP_EXECUTION_ID BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY , VERSION BIGINT NOT NULL, STEP_NAME VARCHAR(100) NOT NULL, JOB_EXECUTION_ID BIGINT NOT NULL, CREATE_TIME TIMESTAMP(9) NOT NULL, START_TIME TIMESTAMP(9) DEFAULT NULL , END_TIME TIMESTAMP(9) DEFAULT NULL , STATUS VARCHAR(10) , COMMIT_COUNT BIGINT , READ_COUNT BIGINT , FILTER_COUNT BIGINT , WRITE_COUNT BIGINT , READ_SKIP_COUNT BIGINT , WRITE_SKIP_COUNT BIGINT , PROCESS_SKIP_COUNT BIGINT , ROLLBACK_COUNT BIGINT , EXIT_CODE VARCHAR(2500) , EXIT_MESSAGE VARCHAR(2500) , LAST_UPDATED TIMESTAMP(9), constraint JOB_EXEC_STEP_FK foreign key (JOB_EXECUTION_ID) references BATCH_JOB_EXECUTION(JOB_EXECUTION_ID) ) [42101-232]
+2025-05-08 18:43:46.530934-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BATCH_STEP_EXECUTION_CONTEXT" already exists; SQL statement:
+CREATE TABLE BATCH_STEP_EXECUTION_CONTEXT ( STEP_EXECUTION_ID BIGINT NOT NULL PRIMARY KEY, SHORT_CONTEXT VARCHAR(2500) NOT NULL, SERIALIZED_CONTEXT LONGVARCHAR , constraint STEP_EXEC_CTX_FK foreign key (STEP_EXECUTION_ID) references BATCH_STEP_EXECUTION(STEP_EXECUTION_ID) ) [42101-232]
+2025-05-08 18:43:46.530934-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BATCH_JOB_EXECUTION_CONTEXT" already exists; SQL statement:
+CREATE TABLE BATCH_JOB_EXECUTION_CONTEXT ( JOB_EXECUTION_ID BIGINT NOT NULL PRIMARY KEY, SHORT_CONTEXT VARCHAR(2500) NOT NULL, SERIALIZED_CONTEXT LONGVARCHAR , constraint JOB_EXEC_CTX_FK foreign key (JOB_EXECUTION_ID) references BATCH_JOB_EXECUTION(JOB_EXECUTION_ID) ) [42101-232]
+2025-05-08 18:43:46.530934-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Sequence "BATCH_STEP_EXECUTION_SEQ" already exists; SQL statement:
+CREATE SEQUENCE BATCH_STEP_EXECUTION_SEQ [90035-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.ddl.CreateSequence.update(CreateSequence.java:53)
+	at org.h2.command.ddl.SchemaOwnerCommand.update(SchemaOwnerCommand.java:33)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:146)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applySchemaScripts(AbstractScriptDatabaseInitializer.java:98)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.etl.etl_pipeline.EtlPipelineApplication.main(EtlPipelineApplication.java:10)
+2025-05-08 18:43:46.532933-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Sequence "BATCH_JOB_EXECUTION_SEQ" already exists; SQL statement:
+CREATE SEQUENCE BATCH_JOB_EXECUTION_SEQ [90035-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.ddl.CreateSequence.update(CreateSequence.java:53)
+	at org.h2.command.ddl.SchemaOwnerCommand.update(SchemaOwnerCommand.java:33)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:146)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applySchemaScripts(AbstractScriptDatabaseInitializer.java:98)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.etl.etl_pipeline.EtlPipelineApplication.main(EtlPipelineApplication.java:10)
+2025-05-08 18:43:46.535113-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Sequence "BATCH_JOB_SEQ" already exists; SQL statement:
+CREATE SEQUENCE BATCH_JOB_SEQ [90035-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.ddl.CreateSequence.update(CreateSequence.java:53)
+	at org.h2.command.ddl.SchemaOwnerCommand.update(SchemaOwnerCommand.java:33)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:146)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applySchemaScripts(AbstractScriptDatabaseInitializer.java:98)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.etl.etl_pipeline.EtlPipelineApplication.main(EtlPipelineApplication.java:10)
+2025-05-08 18:44:07.233707-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:07.447923-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:07.851155-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:08.458681-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:09.263014-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:10.266837-07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:10.473438-07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:10.882726-07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:11.487632-07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:12.292675-07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:13.294826-07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:13.499196-07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:13.908908-07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:14.513965-07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:15.318586-07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:16.322940-07:00 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:16.529116-07:00 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:16.932602-07:00 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:17.537518-07:00 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:44:18.349867-07:00 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:31.351506-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BATCH_JOB_INSTANCE" already exists; SQL statement:
+CREATE TABLE BATCH_JOB_INSTANCE ( JOB_INSTANCE_ID BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY , VERSION BIGINT , JOB_NAME VARCHAR(100) NOT NULL, JOB_KEY VARCHAR(32) NOT NULL, constraint JOB_INST_UN unique (JOB_NAME, JOB_KEY) ) [42101-232]
+2025-05-08 18:53:31.355622-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BATCH_JOB_EXECUTION" already exists; SQL statement:
+CREATE TABLE BATCH_JOB_EXECUTION ( JOB_EXECUTION_ID BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY , VERSION BIGINT , JOB_INSTANCE_ID BIGINT NOT NULL, CREATE_TIME TIMESTAMP(9) NOT NULL, START_TIME TIMESTAMP(9) DEFAULT NULL , END_TIME TIMESTAMP(9) DEFAULT NULL , STATUS VARCHAR(10) , EXIT_CODE VARCHAR(2500) , EXIT_MESSAGE VARCHAR(2500) , LAST_UPDATED TIMESTAMP(9), constraint JOB_INST_EXEC_FK foreign key (JOB_INSTANCE_ID) references BATCH_JOB_INSTANCE(JOB_INSTANCE_ID) ) [42101-232]
+2025-05-08 18:53:31.356091-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BATCH_JOB_EXECUTION_PARAMS" already exists; SQL statement:
+CREATE TABLE BATCH_JOB_EXECUTION_PARAMS ( JOB_EXECUTION_ID BIGINT NOT NULL , PARAMETER_NAME VARCHAR(100) NOT NULL , PARAMETER_TYPE VARCHAR(100) NOT NULL , PARAMETER_VALUE VARCHAR(2500) , IDENTIFYING CHAR(1) NOT NULL , constraint JOB_EXEC_PARAMS_FK foreign key (JOB_EXECUTION_ID) references BATCH_JOB_EXECUTION(JOB_EXECUTION_ID) ) [42101-232]
+2025-05-08 18:53:31.356647-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BATCH_STEP_EXECUTION" already exists; SQL statement:
+CREATE TABLE BATCH_STEP_EXECUTION ( STEP_EXECUTION_ID BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY , VERSION BIGINT NOT NULL, STEP_NAME VARCHAR(100) NOT NULL, JOB_EXECUTION_ID BIGINT NOT NULL, CREATE_TIME TIMESTAMP(9) NOT NULL, START_TIME TIMESTAMP(9) DEFAULT NULL , END_TIME TIMESTAMP(9) DEFAULT NULL , STATUS VARCHAR(10) , COMMIT_COUNT BIGINT , READ_COUNT BIGINT , FILTER_COUNT BIGINT , WRITE_COUNT BIGINT , READ_SKIP_COUNT BIGINT , WRITE_SKIP_COUNT BIGINT , PROCESS_SKIP_COUNT BIGINT , ROLLBACK_COUNT BIGINT , EXIT_CODE VARCHAR(2500) , EXIT_MESSAGE VARCHAR(2500) , LAST_UPDATED TIMESTAMP(9), constraint JOB_EXEC_STEP_FK foreign key (JOB_EXECUTION_ID) references BATCH_JOB_EXECUTION(JOB_EXECUTION_ID) ) [42101-232]
+2025-05-08 18:53:31.357214-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BATCH_STEP_EXECUTION_CONTEXT" already exists; SQL statement:
+CREATE TABLE BATCH_STEP_EXECUTION_CONTEXT ( STEP_EXECUTION_ID BIGINT NOT NULL PRIMARY KEY, SHORT_CONTEXT VARCHAR(2500) NOT NULL, SERIALIZED_CONTEXT LONGVARCHAR , constraint STEP_EXEC_CTX_FK foreign key (STEP_EXECUTION_ID) references BATCH_STEP_EXECUTION(STEP_EXECUTION_ID) ) [42101-232]
+2025-05-08 18:53:31.357214-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BATCH_JOB_EXECUTION_CONTEXT" already exists; SQL statement:
+CREATE TABLE BATCH_JOB_EXECUTION_CONTEXT ( JOB_EXECUTION_ID BIGINT NOT NULL PRIMARY KEY, SHORT_CONTEXT VARCHAR(2500) NOT NULL, SERIALIZED_CONTEXT LONGVARCHAR , constraint JOB_EXEC_CTX_FK foreign key (JOB_EXECUTION_ID) references BATCH_JOB_EXECUTION(JOB_EXECUTION_ID) ) [42101-232]
+2025-05-08 18:53:31.357214-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Sequence "BATCH_STEP_EXECUTION_SEQ" already exists; SQL statement:
+CREATE SEQUENCE BATCH_STEP_EXECUTION_SEQ [90035-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.ddl.CreateSequence.update(CreateSequence.java:53)
+	at org.h2.command.ddl.SchemaOwnerCommand.update(SchemaOwnerCommand.java:33)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:146)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applySchemaScripts(AbstractScriptDatabaseInitializer.java:98)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.etl.etl_pipeline.EtlPipelineApplication.main(EtlPipelineApplication.java:10)
+2025-05-08 18:53:31.359203-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Sequence "BATCH_JOB_EXECUTION_SEQ" already exists; SQL statement:
+CREATE SEQUENCE BATCH_JOB_EXECUTION_SEQ [90035-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.ddl.CreateSequence.update(CreateSequence.java:53)
+	at org.h2.command.ddl.SchemaOwnerCommand.update(SchemaOwnerCommand.java:33)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:146)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applySchemaScripts(AbstractScriptDatabaseInitializer.java:98)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.etl.etl_pipeline.EtlPipelineApplication.main(EtlPipelineApplication.java:10)
+2025-05-08 18:53:31.363257-07:00 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Sequence "BATCH_JOB_SEQ" already exists; SQL statement:
+CREATE SEQUENCE BATCH_JOB_SEQ [90035-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.ddl.CreateSequence.update(CreateSequence.java:53)
+	at org.h2.command.ddl.SchemaOwnerCommand.update(SchemaOwnerCommand.java:33)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:87)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:146)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applySchemaScripts(AbstractScriptDatabaseInitializer.java:98)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:76)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:66)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.etl.etl_pipeline.EtlPipelineApplication.main(EtlPipelineApplication.java:10)
+2025-05-08 18:53:49.380915-07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:49.596164-07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:50.018133-07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:50.621163-07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:51.424854-07:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:52.429796-07:00 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:52.634261-07:00 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:53.038730-07:00 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:53.641800-07:00 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:54.445332-07:00 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:55.450915-07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:55.655364-07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:56.059576-07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:56.671143-07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:57.473412-07:00 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:58.476672-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:58.681753-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:59.083836-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:53:59.686033-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]
+2025-05-08 18:54:00.489712-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT [*]OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"; expected "INTO"; SQL statement:
+INSERT OR REPLACE INTO processed_data (id, first_name, last_name, email, birth_date, address, city, country, phone_number, salary, dependents, age, tax_rate, net_salary, full_name, dependent_allowance, total_deductions, processed_at, processing_status, validation_messages) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [42001-232]

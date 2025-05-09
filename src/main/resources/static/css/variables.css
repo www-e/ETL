@@ -1,0 +1,98 @@
+/* CSS Variables for ETL Pipeline Dashboard */
+:root {
+    /* Color Palette - Modern Teal Theme */
+    --primary-gradient-start: #00897b;
+    --primary-gradient-end: #006064;
+    --primary-color: #00838f;
+    --primary-light: #4fb3bf;
+    --primary-dark: #005662;
+    
+    --secondary-gradient-start: #00acc1;
+    --secondary-gradient-end: #0097a7;
+    --secondary-color: #00bcd4;
+    --secondary-light: #80deea;
+    --secondary-dark: #0097a7;
+    
+    --accent-gradient-start: #26c6da;
+    --accent-gradient-end: #00acc1;
+    --accent-color: #00acc1;
+    --accent-light: #84ffff;
+    --accent-dark: #0097a7;
+    
+    /* Text Colors */
+    --text-dark: #263238;
+    --text-medium: #455a64;
+    --text-light: #78909c;
+    --text-white: #ffffff;
+    --text-on-primary: #e0f7fa;
+    
+    /* Background Colors */
+    --bg-primary: #f5f7f9;
+    --bg-secondary: #eceff1;
+    --bg-card: #ffffff;
+    --bg-dark: #263238;
+    --bg-modal: rgba(38, 50, 56, 0.85);
+    
+    /* Status Colors */
+    --success-color: #10b981;
+    --warning-color: #f59e0b;
+    --error-color: #ef4444;
+    --info-color: #3b82f6;
+    
+    /* Border Colors */
+    --border-light: #e2e8f0;
+    --border-medium: #cbd5e1;
+    --border-dark: #94a3b8;
+    
+    /* Shadow Colors */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-color-dark: rgba(0, 0, 0, 0.2);
+    
+    /* Spacing Variables */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-xxl: 3rem;
+    
+    /* Border Radius */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+    --radius-full: 9999px;
+    
+    /* Animation Timing */
+    --transition-fast: 150ms;
+    --transition-normal: 300ms;
+    --transition-slow: 500ms;
+    
+    /* Font Sizes */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+    
+    /* Font Weights */
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    
+    /* Z-index */
+    --z-0: 0;
+    --z-10: 10;
+    --z-20: 20;
+    --z-30: 30;
+    --z-40: 40;
+    --z-50: 50;
+    --z-auto: auto;
+}

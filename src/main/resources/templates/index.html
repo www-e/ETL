@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETL Pipeline Dashboard</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Chart.js for Data Visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-database"></i>
+                <h1>ETL Pipeline</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="active" data-tab="input-tab"><i class="fas fa-file-upload"></i> Input & Preview</li>
+                    <li data-tab="result-tab"><i class="fas fa-chart-bar"></i> ETL Results</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <!-- Input & Preview Tab -->
+            <section id="input-tab" class="tab-content active">
+                <div class="card upload-card">
+                    <div class="card-header">
+                        <h2 class="card-title"><i class="fas fa-upload"></i> Upload Data File</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="upload-container">
+                            <div class="file-drop-area" id="dropArea">
+                                <i class="fas fa-cloud-upload-alt file-upload-icon"></i>
+                                <span class="file-message">Drag & drop files here or</span>
+                                <label class="btn btn-primary">
+                                    Browse Files
+                                    <input type="file" id="fileInput" accept=".csv,.xlsx,.xls,.json" hidden>
+                                </label>
+                                <p class="file-upload-info">Supported formats: CSV, Excel, JSON</p>
+                            </div>
+                            <div class="file-info" id="fileInfo">
+                                <p>No file selected</p>
+                            </div>
+                            <div class="upload-actions">
+                                <button id="previewBtn" class="btn btn-secondary" disabled>Preview Data</button>
+                                <button id="processBtn" class="btn btn-primary" disabled>Apply ETL</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card preview-card hidden" id="previewCard">
+                    <div class="card-header">
+                        <h2 class="card-title"><i class="fas fa-table"></i> Data Preview</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="preview-container">
+                            <div id="previewLoader" class="loader hidden">
+                                <div class="spinner"></div>
+                                <p>Loading preview...</p>
+                            </div>
+                            <div id="previewContent" class="preview-content">
+                                <p class="no-data-message">Upload and preview a file to see data</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ETL Results Tab -->
+            <section id="result-tab" class="tab-content">
+                <div class="results-header">
+                    <h2><i class="fas fa-chart-line"></i> ETL Processing Results</h2>
+                    <div class="filter-container">
+                        <label for="chartMetric">Chart Metric:</label>
+                        <select id="chartMetric">
+                            <option value="age">Age</option>
+                            <option value="salary">Salary</option>
+                            <option value="netSalary">Net Salary</option>
+                            <option value="taxRate">Tax Rate</option>
+                            <option value="dependents">Dependents</option>
+                        </select>
+                        <label for="chartGroupBy">Group By:</label>
+                        <select id="chartGroupBy">
+                            <option value="country">Country</option>
+                            <option value="city">City</option>
+                            <option value="age">Age Range</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="results-grid">
+                    <div class="card stats-card">
+                        <h3><i class="fas fa-chart-pie"></i> Processing Summary</h3>
+                        <div id="statsLoader" class="loader hidden">
+                            <div class="spinner"></div>
+                        </div>
+                        <div id="statsContent" class="stats-content">
+                            <div class="stat-item">
+                                <span class="stat-label">Total Records</span>
+                                <span class="stat-value" id="totalRecords">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Valid Records</span>
+                                <span class="stat-value" id="validRecords">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Invalid Records</span>
+                                <span class="stat-value" id="invalidRecords">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Average Age</span>
+                                <span class="stat-value" id="avgAge">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Average Salary</span>
+                                <span class="stat-value" id="avgSalary">$0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Average Net Salary</span>
+                                <span class="stat-value" id="avgNetSalary">$0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card chart-card">
+                        <h3><i class="fas fa-chart-bar"></i> Data Visualization</h3>
+                        <div class="chart-container">
+                            <canvas id="dataChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="card results-table-card">
+                        <h3><i class="fas fa-table"></i> Processed Data</h3>
+                        <div id="resultsLoader" class="loader hidden">
+                            <div class="spinner"></div>
+                        </div>
+                        <div id="resultsContent" class="results-content">
+                            <p class="no-data-message">Process data to see results</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 ETL Pipeline. All rights reserved. <span class="footer-version">v1.0.2</span></p>
+        </footer>
+    </div>
+
+    <!-- Job Status Modal -->
+    <div id="statusModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-cogs"></i> ETL Job Status</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="jobStatusLoader" class="loader">
+                    <div class="spinner"></div>
+                    <p>Processing your data...</p>
+                </div>
+                <div id="jobStatusContent" class="job-status-content hidden">
+                    <div class="status-item">
+                        <span class="status-label"><i class="fas fa-hashtag"></i> Job ID:</span>
+                        <span class="status-value" id="jobId"></span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label"><i class="fas fa-info-circle"></i> Status:</span>
+                        <span class="status-value" id="jobStatus"></span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label"><i class="fas fa-clock"></i> Start Time:</span>
+                        <span class="status-value" id="startTime"></span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label"><i class="fas fa-flag-checkered"></i> End Time:</span>
+                        <span class="status-value" id="endTime"></span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label"><i class="fas fa-tasks"></i> Step Details:</span>
+                    </div>
+                    <div id="stepDetails" class="step-details"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="closeStatusBtn" class="btn btn-primary">Close</button>
+                <button id="viewResultsBtn" class="btn btn-secondary">View Results</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/utils/formatters.js"></script>
+    <script src="/js/services/api-service.js"></script>
+    <script src="/js/components/tabs.js"></script>
+    <script src="/js/components/file-upload.js"></script>
+    <script src="/js/components/data-preview.js"></script>
+    <script src="/js/components/data-chart.js"></script>
+    <script src="/js/components/job-status.js"></script>
+    <script src="/js/components/results-table.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

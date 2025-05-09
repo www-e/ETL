@@ -1,7 +1,203 @@
 # ETL Pipeline with Spring Batch
 
-## Project Overview
-This project implements an ETL (Extract, Transform, Load) pipeline using Spring Batch. The pipeline is designed to read data from CSV files, perform transformations, and load the processed data into a SQLite database. It demonstrates the fundamentals of ETL processes while leveraging the Spring Batch framework.
+## ETL Pipeline Project
+
+## Overview
+
+This is a comprehensive ETL (Extract, Transform, Load) pipeline project built with Java 17, Spring Boot, and Spring Batch. The application provides a modern web interface for uploading, processing, and visualizing data through a complete ETL workflow.
+
+## Features
+
+### Backend
+- **Multi-format Data Processing**: Support for CSV, Excel, and JSON input files
+- **Advanced Data Transformation**: Cleaning, validation, and mathematical calculations
+- **Multi-threaded Processing**: Parallel execution for improved performance
+- **SQLite Database Storage**: Persistent storage of processed data
+- **RESTful API**: Comprehensive API for frontend integration
+- **Modular Architecture**: Well-organized code structure following SOLID principles
+
+### Frontend
+- **Modern UI**: Clean, responsive interface with blue-themed design
+- **File Upload**: Drag-and-drop file upload with preview functionality
+- **Data Visualization**: Interactive charts for analyzing processed data
+- **Real-time Job Status**: Live updates on ETL job progress
+- **Detailed Results View**: Comprehensive view of processed data with filtering options
+
+## Technical Stack
+
+### Backend
+- **Language**: Java 17
+- **Build Tool**: Maven
+- **Framework**: Spring Boot, Spring Batch
+- **Database**: SQLite
+- **Libraries**: Apache POI (Excel), Jackson (JSON), Apache Commons CSV
+
+### Frontend
+- **Languages**: HTML5, CSS3, JavaScript
+- **Visualization**: Chart.js
+- **Icons**: Font Awesome
+- **Styling**: Custom CSS with responsive design
+
+## Project Structure
+
+```
+├── src/
+│   ├── main/
+│   │   ├── java/com/etl/etl_pipeline/
+│   │   │   ├── config/          # Spring and batch configuration
+│   │   │   ├── controller/      # REST API controllers
+│   │   │   ├── model/           # Data models and DTOs
+│   │   │   ├── processor/       # Data transformation logic
+│   │   │   ├── reader/          # File readers for different formats
+│   │   │   ├── service/         # Business logic services
+│   │   │   ├── util/            # Utility classes
+│   │   │   ├── writer/          # Database writers
+│   │   │   └── EtlPipelineApplication.java  # Main application class
+│   │   ├── resources/
+│   │   │   ├── static/
+│   │   │   │   ├── css/         # Stylesheet files
+│   │   │   │   ├── js/          # JavaScript files
+│   │   │   │   │   ├── components/  # UI components
+│   │   │   │   │   ├── services/    # API services
+│   │   │   │   │   └── utils/       # Utility functions
+│   │   │   ├── templates/       # HTML templates
+│   │   │   ├── application.properties  # Application configuration
+│   │   │   └── schema.sql       # Database schema
+│   └── test/                    # Test classes
+├── uploads/                     # Upload directory for input files
+├── pom.xml                      # Maven dependencies
+└── README.md                    # Project documentation
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Java 17 or higher
+- Maven 3.6 or higher
+- Web browser (Chrome, Firefox, Edge recommended)
+
+### Running the Application
+
+1. Clone the repository
+2. Navigate to the project directory
+3. Run the application using Maven:
+
+```bash
+./mvnw spring-boot:run
+```
+
+4. Open your browser and navigate to `http://localhost:8080`
+
+### Using the Application
+
+1. **Upload Data**:
+   - Navigate to the "Input & Preview" tab
+   - Drag and drop a CSV, Excel, or JSON file, or click "Browse Files"
+   - Click "Preview Data" to see the raw input data
+
+2. **Process Data**:
+   - Click "Apply ETL" to start the ETL process
+   - Monitor the job status in the modal dialog
+
+3. **View Results**:
+   - Once processing is complete, click "View Results" or navigate to the "ETL Results" tab
+   - Explore the processed data in the table
+   - Use the chart controls to visualize different metrics
+   - Click on any row to view detailed record information
+
+## Sample Data
+
+The project includes sample data files in the `uploads` directory:
+- `sample_data.csv`: CSV sample with 30 records
+- `sample_data.json`: JSON sample with 10 records
+
+## Data Transformation
+
+The ETL pipeline performs the following transformations:
+
+1. **Data Cleaning**:
+   - Trimming whitespace from string fields
+   - Normalizing phone numbers
+   - Setting default values for null fields
+
+2. **Validation**:
+   - Email format validation
+   - Date format validation
+   - Required field checks
+
+3. **Mathematical Processing**:
+   - Age calculation from birth date
+   - Tax rate calculation based on salary
+   - Net salary calculation
+   - Dependent allowance calculation
+   - Total deductions calculation
+
+## API Documentation
+
+### Endpoints
+
+- `POST /api/etl/upload`: Upload and process a file
+- `POST /api/etl/preview`: Preview file contents
+- `GET /api/etl/status/{jobId}`: Get job status
+- `GET /api/etl/data`: Get all processed data
+- `GET /api/etl/stats`: Get statistics about processed data
+
+## Database Schema
+
+The application uses a SQLite database with the following schema:
+
+```sql
+CREATE TABLE IF NOT EXISTS processed_data (
+    id TEXT PRIMARY KEY,
+    first_name TEXT,
+    last_name TEXT,
+    email TEXT,
+    birth_date TEXT,
+    address TEXT,
+    city TEXT,
+    country TEXT,
+    phone_number TEXT,
+    salary REAL,
+    dependents INTEGER,
+    
+    -- Calculated fields
+    age INTEGER,
+    tax_rate REAL,
+    net_salary REAL,
+    full_name TEXT,
+    dependent_allowance REAL,
+    total_deductions REAL,
+    
+    -- Metadata
+    processed_at TEXT,
+    processing_status TEXT,
+    validation_messages TEXT
+);
+```
+
+## Configuration
+
+The application can be configured through the `application.properties` file:
+
+```properties
+# ETL Configuration
+etl.upload-dir=uploads      # Directory for uploaded files
+etl.chunk-size=100          # Batch processing chunk size
+etl.max-threads=4           # Maximum number of processing threads
+```
+
+## Future Enhancements
+
+- Support for additional input formats (XML, Parquet, etc.)
+- Advanced filtering and searching in the results view
+- Export functionality for processed data
+- User authentication and role-based access control
+- Support for scheduled/automated ETL jobs
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Educational Objectives
 - Learn ETL (Extract, Transform, Load) concepts and implementation

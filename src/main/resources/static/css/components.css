@@ -1,0 +1,464 @@
+/* Component Styles for ETL Pipeline Dashboard */
+
+/* Navigation Tabs */
+.nav {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: var(--spacing-lg);
+    border-bottom: none;
+    width: auto;
+}
+
+.nav li {
+    padding: var(--spacing-sm) var(--spacing-xl);
+    cursor: pointer;
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: var(--font-medium);
+    transition: all var(--transition-normal) ease;
+    text-align: center;
+    border-radius: var(--radius-full);
+    letter-spacing: 0.5px;
+    margin: 0 var(--spacing-xs);
+}
+
+.nav li:hover {
+    color: var(--text-white);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav li.active {
+    color: var(--text-white);
+    font-weight: var(--font-semibold);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav li.active::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 3px;
+    background-color: var(--accent-light);
+    border-radius: var(--radius-full);
+    animation: slideInLeft var(--transition-normal) ease-out;
+}
+
+.nav li i {
+    margin-right: var(--spacing-sm);
+}
+
+/* Tab Content */
+.tab-content {
+    padding: var(--spacing-lg) 0;
+    width: 100%;
+}
+
+.tab-pane {
+    display: none;
+    width: 100%;
+}
+
+.tab-pane.active {
+    display: block;
+    animation: fadeIn var(--transition-normal) ease-out;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-xl);
+    border-radius: var(--radius-md);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    transition: all var(--transition-normal) ease;
+    border: none;
+    outline: none;
+    font-size: var(--text-base);
+    letter-spacing: 0.5px;
+    height: 40px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+.btn-primary {
+    background: linear-gradient(to right, var(--primary-gradient-start), var(--primary-gradient-end));
+    color: var(--text-white);
+    box-shadow: 0 2px 10px rgba(0, 131, 143, 0.2);
+}
+
+.btn-secondary {
+    background: linear-gradient(to right, var(--secondary-gradient-start), var(--secondary-gradient-end));
+    color: var(--text-white);
+    box-shadow: 0 2px 10px rgba(0, 188, 212, 0.2);
+}
+
+.btn-accent {
+    background: linear-gradient(to right, var(--accent-gradient-start), var(--accent-gradient-end));
+    color: var(--text-white);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+.btn-sm {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: var(--text-sm);
+}
+
+.btn-lg {
+    padding: var(--spacing-md) var(--spacing-xl);
+    font-size: var(--text-lg);
+}
+
+/* File Upload Area */
+.file-upload-area, .file-drop-area {
+    border: 2px dashed var(--border-medium);
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: all var(--transition-normal) ease;
+    background-color: var(--bg-secondary);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.file-upload-area:hover, .file-upload-area.dragover, .file-drop-area:hover, .file-drop-area.dragover {
+    border-color: var(--primary-color);
+    background-color: rgba(var(--primary-color-rgb), 0.05);
+    transform: translateY(-2px);
+}
+
+.file-upload-icon {
+    font-size: var(--text-4xl);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.file-upload-text {
+    color: var(--text-medium);
+    margin-bottom: var(--spacing-md);
+}
+
+.file-upload-info {
+    font-size: var(--text-sm);
+    color: var(--text-light);
+}
+
+/* File Preview */
+.file-preview {
+    margin-top: var(--spacing-lg);
+}
+
+.file-info {
+    margin-top: var(--spacing-lg);
+    width: 100%;
+}
+
+.file-info-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all var(--transition-normal) ease;
+    border-left: 4px solid var(--primary-color);
+}
+
+.file-info-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.file-info-icon {
+    font-size: var(--text-3xl);
+    color: var(--primary-color);
+    margin-right: var(--spacing-lg);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(var(--primary-color-rgb), 0.1);
+    border-radius: var(--radius-md);
+}
+
+.file-info-details {
+    flex: 1;
+}
+
+.file-name {
+    margin: 0 0 var(--spacing-xs) 0;
+    font-size: var(--text-lg);
+    color: var(--text-dark);
+    font-weight: var(--font-semibold);
+}
+
+.file-meta {
+    display: flex;
+    gap: var(--spacing-md);
+    color: var(--text-medium);
+    font-size: var(--text-sm);
+}
+
+.file-type, .file-size {
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(var(--primary-color-rgb), 0.05);
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+}
+
+.file-preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.file-preview-title {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    color: var(--text-dark);
+}
+
+.file-preview-content {
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: var(--bg-secondary);
+}
+
+/* Job Status */
+.job-status, .modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+    background-color: var(--bg-card);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+}
+
+.job-status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-status-title {
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    color: var(--text-dark);
+}
+
+.job-status-badge {
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: var(--font-medium);
+}
+
+.badge-running {
+    background-color: var(--info-color);
+    color: var(--text-white);
+}
+
+.badge-completed {
+    background-color: var(--success-color);
+    color: var(--text-white);
+}
+
+.badge-failed {
+    background-color: var(--error-color);
+    color: var(--text-white);
+}
+
+.job-status-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.job-status-item {
+    background-color: var(--bg-card);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    text-align: center;
+    transition: all var(--transition-normal) ease;
+}
+
+.job-status-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.job-status-label {
+    font-size: var(--text-sm);
+    color: var(--text-light);
+    margin-bottom: var(--spacing-xs);
+}
+
+.job-status-value {
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+    color: var(--primary-color);
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    margin: var(--spacing-md) 0;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(to right, var(--primary-gradient-start), var(--primary-gradient-end));
+    border-radius: var(--radius-full);
+    transition: width var(--transition-normal) ease;
+}
+
+/* Data Table */
+.data-table-container {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-sm);
+}
+
+.data-table th, .data-table td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.data-table th {
+    background-color: var(--bg-secondary);
+    font-weight: var(--font-semibold);
+    color: var(--text-medium);
+    position: sticky;
+    top: 0;
+    z-index: var(--z-10);
+}
+
+.data-table tbody tr {
+    transition: background-color var(--transition-fast) ease;
+}
+
+.data-table tbody tr:hover {
+    background-color: rgba(var(--primary-color-rgb), 0.05);
+}
+
+/* Data Chart */
+.chart-container {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin: var(--spacing-lg) 0;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-weight: var(--font-medium);
+    color: var(--text-medium);
+}
+
+.form-control {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: 1px solid var(--border-medium);
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    transition: all var(--transition-normal) ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.2);
+    outline: none;
+}
+
+/* Alerts */
+.alert {
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.alert-success {
+    background-color: rgba(var(--success-color-rgb), 0.1);
+    border-left: 4px solid var(--success-color);
+    color: var(--success-color);
+}
+
+.alert-warning {
+    background-color: rgba(var(--warning-color-rgb), 0.1);
+    border-left: 4px solid var(--warning-color);
+    color: var(--warning-color);
+}
+
+.alert-error {
+    background-color: rgba(var(--error-color-rgb), 0.1);
+    border-left: 4px solid var(--error-color);
+    color: var(--error-color);
+}
+
+.alert-info {
+    background-color: rgba(var(--info-color-rgb), 0.1);
+    border-left: 4px solid var(--info-color);
+    color: var(--info-color);
+}
