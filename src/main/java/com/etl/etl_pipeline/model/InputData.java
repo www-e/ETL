@@ -32,4 +32,41 @@ public class InputData {
     private Integer age;
     private Double taxRate;
     private Double netSalary;
+    private Double taxAmount;
+    private Double bonus;
+    private Double retirementContribution;
+    private Double totalCompensation;
+    
+    // Explicit getters and setters for the new fields
+    public Double getTaxAmount() {
+        return taxAmount;
+    }
+    
+    public void setTaxAmount(Double taxAmount) {
+        this.taxAmount = taxAmount;
+    }
+    
+    public Double getBonus() {
+        return bonus;
+    }
+    
+    public void setBonus(Double bonus) {
+        this.bonus = bonus;
+    }
+    
+    public Double getRetirementContribution() {
+        return retirementContribution;
+    }
+    
+    public void setRetirementContribution(Double retirementContribution) {
+        this.retirementContribution = retirementContribution;
+    }
+    
+    public Double getTotalCompensation() {
+        return totalCompensation;
+    }
+    
+    public void setTotalCompensation(Double totalCompensation) {
+        this.totalCompensation = totalCompensation;
+    }
 }

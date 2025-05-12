@@ -17,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -49,15 +50,27 @@ public class EtlService {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
+    
+    @Autowired
+    private FileExportService fileExportService;
 
     @Value("${etl.upload-dir:uploads}")
     private String uploadDir;
     
     @Value("${etl.output-dir:outputs}")
     private String outputDir;
+    
+    @Value("${etl.export.processed:true}")
+    private boolean exportProcessedData;
 
     // Map to store job execution details
     private final Map<String, JobExecution> jobExecutions = new ConcurrentHashMap<>();
+    
+    // Map to store original file names for each job
+    private final Map<String, String> jobOriginalFileNames = new ConcurrentHashMap<>();
+    
+    // Map to store file types for each job
+    private final Map<String, String> jobFileTypes = new ConcurrentHashMap<>();
 
     /**
      * Process a file through the ETL pipeline
@@ -136,6 +149,10 @@ public class EtlService {
         // Store job execution for status tracking
         jobExecutions.put(jobId, jobExecution);
         
+        // Store original file name and type for later use in exporting
+        jobOriginalFileNames.put(jobId, originalFilename);
+        jobFileTypes.put(jobId, fileExtension);
+        
         log.info("ETL job started with ID: {}", jobId);
         return jobId;
     }
@@ -201,6 +218,11 @@ public class EtlService {
         }
         
         status.put("steps", stepDetails);
+        
+        // If job is completed, export processed data
+        if (exportProcessedData && batchStatus == BatchStatus.COMPLETED) {
+            exportProcessedDataForJob(jobId);
+        }
         
         return status;
     }
@@ -395,6 +417,43 @@ public class EtlService {
     }
 
     /**
+     * Export processed data for a completed job
+     * @param jobId Job ID
+     */
+    @Async
+    public void exportProcessedDataForJob(String jobId) {
+        try {
+            // Get original file name and type
+            String originalFileName = jobOriginalFileNames.get(jobId);
+            String fileType = jobFileTypes.get(jobId);
+            
+            if (originalFileName == null || fileType == null) {
+                log.warn("Cannot export processed data for job {}: missing file information", jobId);
+                return;
+            }
+            
+            // Get processed data from database
+            List<ProcessedData> processedData = getAllProcessedData();
+            
+            if (processedData.isEmpty()) {
+                log.warn("No processed data found for job {}", jobId);
+                return;
+            }
+            
+            // Export processed data to file
+            String exportedFilePath = fileExportService.exportProcessedData(processedData, originalFileName, fileType);
+            
+            if (exportedFilePath != null) {
+                log.info("Exported processed data for job {} to {}", jobId, exportedFilePath);
+            } else {
+                log.error("Failed to export processed data for job {}", jobId);
+            }
+        } catch (Exception e) {
+            log.error("Error exporting processed data for job {}", jobId, e);
+        }
+    }
+    
+    /**
      * Row mapper for ProcessedData
      * @return RowMapper for ProcessedData
      */
@@ -422,6 +481,35 @@ public class EtlService {
             data.setFullName(rs.getString("full_name"));
             data.setDependentAllowance(rs.getDouble("dependent_allowance"));
             data.setTotalDeductions(rs.getDouble("total_deductions"));
+            
+            // Get new fields with null handling
+            try {
+                data.setBonus(rs.getDouble("bonus"));
+                if (rs.wasNull()) data.setBonus(null);
+            } catch (Exception e) {
+                data.setBonus(null);
+            }
+            
+            try {
+                data.setRetirementContribution(rs.getDouble("retirement_contribution"));
+                if (rs.wasNull()) data.setRetirementContribution(null);
+            } catch (Exception e) {
+                data.setRetirementContribution(null);
+            }
+            
+            try {
+                data.setTotalCompensation(rs.getDouble("total_compensation"));
+                if (rs.wasNull()) data.setTotalCompensation(null);
+            } catch (Exception e) {
+                data.setTotalCompensation(null);
+            }
+            
+            try {
+                data.setTaxAmount(rs.getDouble("tax_amount"));
+                if (rs.wasNull()) data.setTaxAmount(null);
+            } catch (Exception e) {
+                data.setTaxAmount(null);
+            }
             
             String processedAtStr = rs.getString("processed_at");
             data.setProcessedAt(processedAtStr != null ? 

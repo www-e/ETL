@@ -20,6 +20,13 @@ class ResultsTableManager {
             // Get processed data from API
             const data = await apiService.getAllData();
             
+            // Log data for debugging
+            console.log('Loaded data:', data);
+            if (data && data.length > 0) {
+                console.log('First record fields:', Object.keys(data[0]));
+                console.log('Sample record:', data[0]);
+            }
+            
             // Render results table
             this.renderResultsTable(data);
         } catch (error) {
@@ -45,8 +52,16 @@ class ResultsTableManager {
             return;
         }
         
+        // Log column availability for debugging
+        const firstRecord = data[0];
+        console.log('Checking for new columns in data:');
+        console.log('bonus present:', firstRecord.hasOwnProperty('bonus'));
+        console.log('retirementContribution present:', firstRecord.hasOwnProperty('retirementContribution'));
+        console.log('totalCompensation present:', firstRecord.hasOwnProperty('totalCompensation'));
+        console.log('taxAmount present:', firstRecord.hasOwnProperty('taxAmount'));
+        
         // Create table HTML
-        let tableHtml = '<div class="table-responsive"><table class="data-table">';
+        let tableHtml = '<div class="data-table-container"><table class="data-table">';
         
         // Add header row
         tableHtml += '<thead><tr>';
@@ -60,9 +75,13 @@ class ResultsTableManager {
             { key: 'age', label: 'Age' },
             { key: 'city', label: 'City' },
             { key: 'country', label: 'Country' },
-            { key: 'salary', label: 'Salary' },
-            { key: 'taxRate', label: 'Tax Rate' },
-            { key: 'netSalary', label: 'Net Salary' },
+            { key: 'salary', label: 'Salary', format: 'currency' },
+            { key: 'bonus', label: 'Bonus', format: 'currency' },
+            { key: 'retirementContribution', label: 'Retirement', format: 'currency' },
+            { key: 'totalCompensation', label: 'Total Compensation', format: 'currency' },
+            { key: 'taxRate', label: 'Tax Rate', format: 'percentage' },
+            { key: 'taxAmount', label: 'Tax Amount', format: 'currency' },
+            { key: 'netSalary', label: 'Net Salary', format: 'currency' },
             { key: 'processingStatus', label: 'Status' }
         ];
         
@@ -81,24 +100,31 @@ class ResultsTableManager {
             columns.forEach(column => {
                 let value = row[column.key];
                 
-                // Format values based on column type
-                switch (column.key) {
-                    case 'birthDate':
-                        value = value ? formatters.date(value) : '';
-                        break;
-                    case 'salary':
-                    case 'netSalary':
-                        value = formatters.currency(value);
-                        break;
-                    case 'taxRate':
-                        value = formatters.percentage(value);
-                        break;
-                    case 'processingStatus':
-                        const statusClass = value === 'VALID' ? 'status-success' : 'status-error';
-                        value = `<span class="${statusClass}">${value}</span>`;
-                        break;
-                    default:
-                        value = value !== null && value !== undefined ? value : '';
+                // Format values based on column format or key
+                if (column.format) {
+                    switch (column.format) {
+                        case 'currency':
+                            value = formatters.currency(value || 0);
+                            break;
+                        case 'percentage':
+                            value = formatters.percentage(value || 0);
+                            break;
+                        case 'date':
+                            value = value ? formatters.date(value) : '';
+                            break;
+                    }
+                } else {
+                    switch (column.key) {
+                        case 'birthDate':
+                            value = value ? formatters.date(value) : '';
+                            break;
+                        case 'processingStatus':
+                            const statusClass = value === 'VALID' ? 'status-success' : 'status-error';
+                            value = `<span class="${statusClass}">${value || 'N/A'}</span>`;
+                            break;
+                        default:
+                            value = value !== null && value !== undefined ? value : '';
+                    }
                 }
                 
                 tableHtml += `<td>${value}</td>`;
@@ -203,15 +229,31 @@ class ResultsTableManager {
                         <div class="details-grid">
                             <div class="detail-item">
                                 <span class="detail-label">Salary:</span>
-                                <span class="detail-value">${formatters.currency(rowData.salary)}</span>
+                                <span class="detail-value">${formatters.currency(rowData.salary || 0)}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Bonus:</span>
+                                <span class="detail-value">${formatters.currency(rowData.bonus || 0)}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Retirement Contribution:</span>
+                                <span class="detail-value">${formatters.currency(rowData.retirementContribution || 0)}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Total Compensation:</span>
+                                <span class="detail-value">${formatters.currency(rowData.totalCompensation || 0)}</span>
                             </div>
                             <div class="detail-item">
                                 <span class="detail-label">Tax Rate:</span>
-                                <span class="detail-value">${formatters.percentage(rowData.taxRate)}</span>
+                                <span class="detail-value">${formatters.percentage(rowData.taxRate || 0)}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Tax Amount:</span>
+                                <span class="detail-value">${formatters.currency(rowData.taxAmount || 0)}</span>
                             </div>
                             <div class="detail-item">
                                 <span class="detail-label">Net Salary:</span>
-                                <span class="detail-value">${formatters.currency(rowData.netSalary)}</span>
+                                <span class="detail-value">${formatters.currency(rowData.netSalary || 0)}</span>
                             </div>
                             <div class="detail-item">
                                 <span class="detail-label">Dependents:</span>
@@ -219,11 +261,11 @@ class ResultsTableManager {
                             </div>
                             <div class="detail-item">
                                 <span class="detail-label">Dependent Allowance:</span>
-                                <span class="detail-value">${formatters.currency(rowData.dependentAllowance)}</span>
+                                <span class="detail-value">${formatters.currency(rowData.dependentAllowance || 0)}</span>
                             </div>
                             <div class="detail-item">
                                 <span class="detail-label">Total Deductions:</span>
-                                <span class="detail-value">${formatters.currency(rowData.totalDeductions)}</span>
+                                <span class="detail-value">${formatters.currency(rowData.totalDeductions || 0)}</span>
                             </div>
                         </div>
                         

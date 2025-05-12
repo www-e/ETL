@@ -37,6 +37,10 @@ public class ProcessedData {
     private String fullName;
     private Double dependentAllowance;
     private Double totalDeductions;
+    private Double bonus;                    // Performance or seniority bonus
+    private Double retirementContribution;   // Retirement plan contribution
+    private Double totalCompensation;        // Total compensation including bonus
+    private Double taxAmount;                // Actual tax amount in currency
     
     // Metadata
     private LocalDateTime processedAt;

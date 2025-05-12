@@ -360,18 +360,27 @@ align-items: center;
 /* Data Table */
 .data-table-container {
     overflow-x: auto;
+    max-width: 100%;
+    margin-bottom: var(--spacing-lg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: var(--radius-md);
 }
 
 .data-table {
     width: 100%;
+    min-width: 1200px; /* Ensure table is wide enough for all columns */
     border-collapse: collapse;
     font-size: var(--text-sm);
+    table-layout: fixed;
 }
 
 .data-table th, .data-table td {
     padding: var(--spacing-md);
     text-align: left;
     border-bottom: 1px solid var(--border-light);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .data-table th {

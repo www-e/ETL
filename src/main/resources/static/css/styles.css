@@ -588,9 +588,12 @@ body {
 
 .details-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: var(--spacing-lg) var(--spacing-xl);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--spacing-md) var(--spacing-lg);
     margin-bottom: var(--spacing-lg);
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: var(--spacing-md);
 }
 
 .detail-item {

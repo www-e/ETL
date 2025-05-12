@@ -62,8 +62,9 @@ public class DatabaseWriter implements ItemWriter<ProcessedData> {
         "INSERT OR REPLACE INTO processed_data (" +
         "id, first_name, last_name, email, birth_date, address, city, country, " +
         "phone_number, salary, dependents, age, tax_rate, net_salary, full_name, " +
-        "dependent_allowance, total_deductions, processed_at, processing_status, validation_messages" +
-        ") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        "dependent_allowance, total_deductions, bonus, retirement_contribution, total_compensation, tax_amount, " +
+        "processed_at, processing_status, validation_messages" +
+        ") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
     @Override
     public void write(@org.springframework.lang.NonNull Chunk<? extends ProcessedData> items) throws Exception {
@@ -229,6 +230,10 @@ public class DatabaseWriter implements ItemWriter<ProcessedData> {
                     data.getFullName(),
                     data.getDependentAllowance() != null ? data.getDependentAllowance() : 0.0,
                     data.getTotalDeductions() != null ? data.getTotalDeductions() : 0.0,
+                    data.getBonus() != null ? data.getBonus() : 0.0,
+                    data.getRetirementContribution() != null ? data.getRetirementContribution() : 0.0,
+                    data.getTotalCompensation() != null ? data.getTotalCompensation() : 0.0,
+                    data.getTaxAmount() != null ? data.getTaxAmount() : 0.0,
                     data.getProcessedAt() != null ? data.getProcessedAt().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME) : null,
                     data.getProcessingStatus(),
                     data.getValidationMessages()
@@ -311,17 +316,21 @@ public class DatabaseWriter implements ItemWriter<ProcessedData> {
                         ps.setString(7, data.getCity());
                         ps.setString(8, data.getCountry());
                         ps.setString(9, data.getPhoneNumber());
-                        ps.setDouble(10, data.getSalary());
-                        ps.setInt(11, data.getDependents());
-                        ps.setInt(12, data.getAge());
-                        ps.setDouble(13, data.getTaxRate());
-                        ps.setDouble(14, data.getNetSalary());
+                        ps.setDouble(10, data.getSalary() != null ? data.getSalary() : 0.0);
+                        ps.setInt(11, data.getDependents() != null ? data.getDependents() : 0);
+                        ps.setInt(12, data.getAge() != null ? data.getAge() : 0);
+                        ps.setDouble(13, data.getTaxRate() != null ? data.getTaxRate() : 0.0);
+                        ps.setDouble(14, data.getNetSalary() != null ? data.getNetSalary() : 0.0);
                         ps.setString(15, data.getFullName());
-                        ps.setDouble(16, data.getDependentAllowance());
-                        ps.setDouble(17, data.getTotalDeductions());
-                        ps.setString(18, data.getProcessedAt() != null ? data.getProcessedAt().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME) : null);
-                        ps.setString(19, data.getProcessingStatus() != null ? data.getProcessingStatus().toString() : null);
-                        ps.setString(20, data.getValidationMessages());
+                        ps.setDouble(16, data.getDependentAllowance() != null ? data.getDependentAllowance() : 0.0);
+                        ps.setDouble(17, data.getTotalDeductions() != null ? data.getTotalDeductions() : 0.0);
+                        ps.setDouble(18, data.getBonus() != null ? data.getBonus() : 0.0);
+                        ps.setDouble(19, data.getRetirementContribution() != null ? data.getRetirementContribution() : 0.0);
+                        ps.setDouble(20, data.getTotalCompensation() != null ? data.getTotalCompensation() : 0.0);
+                        ps.setDouble(21, data.getTaxAmount() != null ? data.getTaxAmount() : 0.0);
+                        ps.setString(22, data.getProcessedAt() != null ? data.getProcessedAt().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME) : null);
+                        ps.setString(23, data.getProcessingStatus() != null ? data.getProcessingStatus().toString() : null);
+                        ps.setString(24, data.getValidationMessages());
                     }
                     
                     @Override
